@@ -47,15 +47,15 @@
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
-
-                <x-button class="ml-3">
+                <div class="flex">
+                <x-button class="w-full">
                     {{ __('Log in') }}
                 </x-button>
-                
-                <x-button class="ml-3" onclick="window.location='{{ route('socialite.redirect') }}'">
-                    {{ __('Log in with Github') }}
-                </x-button>
+                </div>
             </div>
+            <x-button class="w-full" onclick="window.location='{{ route('socialite.redirect') }}'">
+                 {{ __('Log in with Github') }} 
+                </x-button>
         </form>
     </x-auth-card>
 </x-guest-layout>
