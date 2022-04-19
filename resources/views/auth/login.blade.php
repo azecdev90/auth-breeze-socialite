@@ -51,6 +51,10 @@
                 <x-button class="ml-3">
                     {{ __('Log in') }}
                 </x-button>
+                
+                <x-button class="ml-3" onclick="window.location='{{ route('socialite.redirect') }}'">
+                    {{ __('Log in with Github') }}
+                </x-button>
             </div>
         </form>
     </x-auth-card>
